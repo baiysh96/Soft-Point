@@ -9,7 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    scroll-behavior: auto;
+
 }
 html{
     scroll-behavior: smooth;
@@ -21,7 +21,7 @@ a {
 }
 
 .header {
-    padding: 45px 0;
+    padding: 25px 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 1)
 
@@ -35,6 +35,7 @@ a {
 
 .row {
     display: flex;
+    margin: 0 -15px;
 
 }
 
@@ -71,7 +72,7 @@ a {
 .burger span {
     width: 50px;
     height: 2px;
-    background: rgba(83, 215, 171, 0.5);
+    background: #fff;
     z-index: 2;
     position: relative;
 }
@@ -79,7 +80,7 @@ a {
     content: "";
     width: 50px;
     height: 2px;
-    background: rgba(83, 215, 171, 0.5);
+    background: #FFF;
     z-index: 2;
     position: absolute;
     top: -10px;
@@ -89,7 +90,7 @@ a {
     content: "";
     width: 50px;
     height: 2px;
-    background: rgba(9, 222, 152, 0.5);
+    background: #fff;
     z-index: 2;
     position: absolute;
     bottom: -10px;
@@ -109,6 +110,7 @@ a {
 .show-menu span{
     background-color: transparent;
 }
+
 
 
 
@@ -133,13 +135,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 30px;
+    padding: 12px 30px;
     background: rgba(244, 69, 69, 1);
     border-radius: 6px;
     font-size: 18px;
     line-height: 27px;
     margin-left: 13px;
     transition: 0.6s;
+    cursor: pointer;
 
 }
 .header-btn:hover{
@@ -151,7 +154,7 @@ a {
 
 .hero {
     background-color: rgba(255, 255, 255, 1);
-    padding: 150px 0 134px;
+    padding: 50px 0;
 }
 
 .col-7 {
@@ -228,6 +231,7 @@ a {
     position: absolute;
     right: 44px;
     bottom: 308px;
+    cursor: pointer;
 }
 .feedback-btn:hover{
     background: #FFF;
@@ -252,12 +256,8 @@ a {
 
 .our-clients {
     background: rgba(142, 230, 201, 0.5);
-    padding: 55px 0;
+    padding: 50px 0;
 
-}
-.col-2{
-    width: 24%;
-    padding: 0 10px;
 }
 
 .about {
@@ -360,6 +360,7 @@ a {
     border-radius: 6px;
     margin-right: 25px;
     transition: 0.5s;
+    cursor: pointer;
 }
 .about-btn:hover {
     background: #FFF;
@@ -436,7 +437,7 @@ a {
 .software-img {
     position: absolute;
     top: -100px;
-    right: 0;
+    left: 0;
 }
 
 .padding {
@@ -477,7 +478,7 @@ a {
     bottom: 0;
     background-color: #43DDAA;
     -webkit-transition: .4s;
-    transition: 0.4s;
+    transition: .4s;
 }
 .slider:before{
     position: absolute;
@@ -488,8 +489,10 @@ a {
     bottom: 4px;
     background-color: white;
     -webkit-transition: .4s;
-    transition: 0.4s;
+    transition: .4s;
 }
+
+
 input:checked + .slider {
     background-color: #43DDAA;;
 }
@@ -532,39 +535,13 @@ input[type=range] + label {
     padding: 10px 10px;
     color: #fff;
     position: absolute;
-    top: -25px;
-    left: 351px;
+    top: -35px;
+    left: calc( 50%- 40px);
     text-align: center;
     width: 80px;
     font-size: 17px;
     line-height: 80%;
     height: 35px;
-}
-.range-container .range-span{
-    position: relative;
-    width: 15px;
-    height: 15px;
-    background: #282323;
-    transform: rotate(180deg)
-}
-.range-container .range-span:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    background: #282323;
-    transform: rotate(180deg)
-
-}
-.range-container .range-span:after{
-    content: "";
-    position: absolute;
-   bottom: 0;
-    width: 15px;
-    height: 15px;
-    background: #282323;
-    transform: rotate(180deg)
 }
 
 input[type=range]:active {
@@ -656,9 +633,13 @@ input[type=range]:active::-ms-fill-upper {
     width: 33.333%;
     padding: 0 15px;
 }
-.col-4-price{
+
+.plan-price{
     border: 1px solid rgba(1, 18, 18, 0.1);
     padding: 35px 0;
+    position: relative;
+    background-color: #FFFFFF;
+
 }
 
 .content-title{
@@ -670,50 +651,27 @@ input[type=range]:active::-ms-fill-upper {
 }
 .content-price{
     margin-bottom: 35px;
+
 }
 
-.col-4-content {
+.plan-content {
     display: flex;
     justify-content: space-around;
     padding: 22px 0;
     border-bottom: 1px solid rgba(1, 18, 18, 0.1);
     border-top: 1px solid rgba(1, 18, 18, 0.1);
 }
-.col-4-info{
+.plan-info{
     display: flex;
+    position: relative;
 }
-.col-4-info-desc{
+.plan-info-desc{
     font-weight: 500;
     font-size: 16px;
     line-height: 160%;
     color: #021206;
     opacity: 0.7;
     margin-left: 9px;
-}
-
-.info-col-4 {
-    display: flex;
-    align-items: center;
-}
-
-.info-col-4 img {
-    padding-right: 9px;
-    padding-left: 29px;
-}
-
-.info-col-4 .choice-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    opacity: 0.7;
-}
-
-.choice {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    opacity: 0.7;
-    padding-right: 29px;
 }
 
 .price-btn{
@@ -727,6 +685,30 @@ input[type=range]:active::-ms-fill-upper {
     border: 1px solid #F55454;
     color: rgba(245, 84, 84, 0.9);
     transition: 0.6s;
+}
+.price-btn:hover{
+    background: #F55454;
+    border: 1px solid #F55454;
+    color: white;
+}
+.position{
+    position: relative;
+}
+
+.orange-img{
+    position: absolute;
+    bottom: 0;
+    left: -130px;
+    z-index: -1;
+}
+
+.green-img {
+    position: absolute;
+    top: 140px;
+    bottom: 0;
+    margin: auto;
+    right: -125px;
+    z-index: -1;
 }
 
 

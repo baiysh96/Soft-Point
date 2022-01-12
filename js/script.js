@@ -1,6 +1,6 @@
 const myBurger = document.querySelector('.burger')
 const myMenu = document.querySelector('.menu')
-const menuLinks = document.querySelectorAll('.menu-link')
+const menuItems = document.querySelectorAll('.menu-item')
 
 myBurger.addEventListener('click', () =>{
     myBurger.classList.toggle('show-menu')
@@ -12,7 +12,7 @@ myBurger.addEventListener('click', () =>{
     document.body.classList.toggle('o-hidden')
 })
 
-menuLinks.forEach( oneLink=> {
+menuItems.forEach( oneLink=> {
     oneLink.addEventListener('click', () => {
         myMenu.classList.remove('show-menu')
         myMenu.classList.remove('show')
@@ -47,3 +47,38 @@ range.addEventListener('input', (e) => {
 const scale = (num, in_min, in_max, out_min, out_max) => {
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 40,
+        dots: true,
+
+    });
+});
+
+
+const  swiper = new swiper('.swiper', {
+    // Optional parameters
+     nav: "true",
+     items: 1,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-staring',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+AOS.init();

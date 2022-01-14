@@ -32,7 +32,7 @@ range.addEventListener('input', (e) => {
     const label_width = getComputedStyle(label).getPropertyValue('width');
     // Remove 'px' and conver to number
     const num_width = +range_width.substring(0, range_width.length - 2);
-    const num_label_width = +label_width.substring(0, label_width.length - 2);
+    const num_label_width = +label_width.substring(0, label_width.length -2);
     // Get min and max values
     const max = +e.target.max;
     const min = +e.target.min;
@@ -50,35 +50,19 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items: 4,
+        items: 3,
         loop: true,
         margin: 40,
         dots: true,
-
+        nav: true,
+        responsiveClass: true,
+        responsive:{
+            320:{
+                items: 1,
+                dots: true,
+            }
+        }
     });
+
 });
-
-
-const  swiper = new swiper('.swiper', {
-    // Optional parameters
-     nav: "true",
-     items: 1,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-staring',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
-
 AOS.init();

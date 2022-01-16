@@ -74,7 +74,7 @@ $(".owl-carousel").owlCarousel({
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-
+      loop: true,
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -90,6 +90,7 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true,
+        loop: true,
     },
 });
 

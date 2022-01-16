@@ -20,6 +20,7 @@ a {
     color: inherit;
 }
 
+
 .header {
     padding: 25px 0;
     width: 100%;
@@ -38,7 +39,6 @@ a {
     margin: 0 -15px;
 
 }
-
 .col-4 {
     width: 33.333%;
     padding: 0 15px;
@@ -157,6 +157,9 @@ a {
 .hero {
     background-color: rgba(255, 255, 255, 1);
     padding: 50px 0;
+}
+.hero-row{
+    display: flex;
 }
 
 .col-7 {
@@ -529,6 +532,18 @@ input[type=range] {
     margin-bottom: 91px;
     -webkit-appearance: none;
 }
+.swiper-button-prev:after{
+    color: #4EDAAC;
+
+}
+.swiper-button-next:after{
+    color: #4EDAAC;
+}
+.swiper-scrollbar{
+    cursor: pointer;
+    background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+
+}
 
 input[type=range] + label {
     background-color: #000000;
@@ -667,10 +682,10 @@ input[type=range]:active::-ms-fill-upper {
     justify-content: space-around;
     padding: 22px 0;
     border-top: 1px solid rgba(1, 18, 18, 0.1);
+    position: relative;
 }
 .plan-info{
     display: flex;
-    position: relative;
 }
 .plan-info-desc{
     font-weight: 500;
@@ -694,7 +709,7 @@ input[type=range]:active::-ms-fill-upper {
     transition: 0.6s;
     cursor: pointer;
 }
-.price-btn:hover{
+.plan-content .price-btn:hover{
     background: #F55454;
     border: 1px solid #F55454;
     color: white;
@@ -717,6 +732,9 @@ input[type=range]:active::-ms-fill-upper {
     right: -125px;
     top: -160px;
     z-index: -1;
+}
+.slider{
+    display: flex;
 }
 
 

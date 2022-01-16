@@ -51,18 +51,47 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         items: 3,
-        loop: true,
-        margin: 40,
+        margin: 30,
         dots: true,
         nav: true,
-        responsiveClass: true,
-        responsive:{
-            320:{
-                items: 1,
-                dots: true,
-            }
-        }
+        loop: true,
     });
-
 });
+$(".owl-carousel").owlCarousel({
+    responsive: {
+        0:{
+            items: 1,
+        },
+        767:{
+            items: 2,
+        },
+        992:{
+            items: 3,
+        }
+    }
+});
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+    },
+});
+
+
 AOS.init();

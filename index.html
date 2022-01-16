@@ -2,12 +2,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Soft Point</title>
-    <link rel="stylesheet" href="./css/owl.carousel.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
@@ -62,12 +62,12 @@
 </section>
 <section class="our-clients">
     <div class="container">
-        <div class="our-clients-item owl-carousel">
-            <img src="./images/Google.svg" alt="img">
-            <img src="./images/Avast.svg" alt="img">
-            <img src="./images/ebay.svg" alt="img">
-            <img src="./images/paypal.svg" alt="img">
-            <img src="./images/HubSpot.svg" alt="img">
+        <div class="our-clients-item owl-carousel owl-theme">
+           <div><img src="./images/Google.svg" alt="img"></div>
+           <div><img src="./images/Avast.svg" alt="img"></div>
+          <div><img src="./images/ebay.svg" alt="img"></div>
+          <div><img src="./images/paypal.svg" alt="img"></div>
+          <div><img src="./images/HubSpot.svg" alt="img"></div>
         </div>
     </div>
 </section>
@@ -224,138 +224,144 @@ border-radius: 10px;">
             <label for="range" class="range-item"> $130</label>
             <span class="range-span"></span>
         </div>
-        <div class="row position">
-            <div class="col-4">
-                <div class="plan-price">
-                    <p class="content-title">Basic Plan</p>
-                    <h2 class="content-price">0$</h2>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc">Limited Acess Library</p>
+        <div class="swiper">
+            <div class="row position swiper-wrapper">
+                <div class="col-4 swiper-slide">
+                    <div class="plan-price">
+                        <p class="content-title">Basic Plan</p>
+                        <h2 class="content-price">0$</h2>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc">Limited Acess Library</p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">Yes</p>
+                            </div>
                         </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">Yes</p>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc"><s>>100+ HTML UI Elements</s></p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">No</p>
+                            </div>
                         </div>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc"><s>Hotline Support 24/7</s></p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">No</p>
+                            </div>
+                        </div>
+                        <div class="plan-content" style="border-bottom: 1px solid rgba(1, 18, 18, 0.1);">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc"><s>API & extension support</s></p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">No</p>
+                            </div>
+                        </div>
+                        <button class="price-btn">Buy Plan</button>
                     </div>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc"><s>>100+ HTML UI Elements</s></p>
-                        </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">No</p>
-                        </div>
-                    </div>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc"><s>Hotline Support 24/7</s></p>
-                        </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">No</p>
-                        </div>
-                    </div>
-                    <div class="plan-content" style="border-bottom: 1px solid rgba(1, 18, 18, 0.1);">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc"><s>API & extension support</s></p>
-                        </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">No</p>
-                        </div>
-                    </div>
-                    <button class="price-btn">Buy Plan</button>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="plan-price">
-                    <p class="content-title">Premium Plan</p>
-                    <h2 class="content-price">130$</h2>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc">Limited Acess Library</p>
+                <div class="col-4 swiper-slide">
+                    <div class="plan-price">
+                        <p class="content-title">Premium Plan</p>
+                        <h2 class="content-price">130$</h2>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc">Limited Acess Library</p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">Yes</p>
+                            </div>
                         </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">Yes</p>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc">100+ HTML UI Elements</p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">Yes</p>
+                            </div>
                         </div>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc"><s>Hotline Support 24/7</s></p>
+                            </div>
+                            <div class="answer">
+                                <p class="col-4-info-desc">No</p>
+                            </div>
+                        </div>
+                        <div class="plan-content" style="border-bottom: 1px solid rgba(1, 18, 18, 0.1);">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc"><s>API & extension support</s></p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">No</p>
+                            </div>
+                        </div>
+                        <button class="price-btn">Buy Plan</button>
                     </div>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc">100+ HTML UI Elements</p>
-                        </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">Yes</p>
-                        </div>
-                    </div>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc"><s>Hotline Support 24/7</s></p>
-                        </div>
-                        <div class="answer">
-                            <p class="col-4-info-desc">No</p>
-                        </div>
-                    </div>
-                    <div class="plan-content" style="border-bottom: 1px solid rgba(1, 18, 18, 0.1);">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc"><s>API & extension support</s></p>
-                        </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">No</p>
-                        </div>
-                    </div>
-                    <button class="price-btn">Buy Plan</button>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="plan-price">
-                    <p class="content-title">Ultimate Plan</p>
-                    <h2 class="content-price">210$</h2>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc">Limited Acess Library</p>
+                <div class="col-4 swiper-slide">
+                    <div class="plan-price">
+                        <p class="content-title">Ultimate Plan</p>
+                        <h2 class="content-price">210$</h2>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc">Limited Acess Library</p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">Yes</p>
+                            </div>
                         </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">Yes</p>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc">100+ HTML UI Elements</p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">Yes</p>
+                            </div>
                         </div>
+                        <div class="plan-content">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc">Hotline Support 24/7</p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">Yes</p>
+                            </div>
+                        </div>
+                        <div class="plan-content" style="border-bottom: 1px solid rgba(1, 18, 18, 0.1);">
+                            <div class="plan-info">
+                                <img src="./images/check-img.svg" alt="check-mark">
+                                <p class="plan-info-desc">API & extension support</p>
+                            </div>
+                            <div class="answer">
+                                <p class="plan-info-desc">Yes</p>
+                            </div>
+                        </div>
+                        <button class="price-btn">Buy Plan</button>
                     </div>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc">100+ HTML UI Elements</p>
-                        </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">Yes</p>
-                        </div>
-                    </div>
-                    <div class="plan-content">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc">Hotline Support 24/7</p>
-                        </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">Yes</p>
-                        </div>
-                    </div>
-                    <div class="plan-content" style="border-bottom: 1px solid rgba(1, 18, 18, 0.1);">
-                        <div class="plan-info">
-                            <img src="./images/check-img.svg" alt="check-mark">
-                            <p class="plan-info-desc">API & extension support</p>
-                        </div>
-                        <div class="answer">
-                            <p class="plan-info-desc">Yes</p>
-                        </div>
-                    </div>
-                    <button class="price-btn">Buy Plan</button>
                 </div>
+                <img src="./images/plan-img.png" alt="img" class="green-img">
+                <img src="./images/plan-img2.png" alt="img" class="orange-img">
             </div>
-            <img src="./images/plan-img.png" alt="img" class="green-img">
-            <img src="./images/plan-img2.png" alt="img" class="orange-img">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
         </div>
     </div>
 </section>
@@ -379,7 +385,7 @@ border-radius: 10px;">
             <div class="col-3">
                 <h3 class="footer-title"><a href="#">Contact us</a></h3>
                 <p class="footer-desc"><a href="tel:773) 217-8810">(773) 217-8810</a></p>
-                <p class="footer-desc"><a href="#Downers Grove, IL 60515">Downers Grove, IL 60515</a></p>
+                <p class="footer-desc"><a href="address:Downers Grove, IL 60515">Downers Grove, IL 60515</a></p>
             </div>
         </div>
     </div>

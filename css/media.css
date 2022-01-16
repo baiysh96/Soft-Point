@@ -259,10 +259,6 @@
         width: 100%;
 
     }
-    .plan .col-4{
-        width: 100%;
-        min-width: 0;
-    }
 
     .software-img{
         position: static;
@@ -270,9 +266,7 @@
         width: 100%;
 
     }
-       .col-4{
-        width: 100%;
-    }
+
        .title{
            font-size: 32px;
            margin-bottom: 10px;

@@ -397,12 +397,12 @@
         font-size: 14px;
         padding: 10px 30px;
     }
-    .plan .row{
-        flex-direction: column;
-    }
-    .plan .col-4{
-        margin-bottom: 10px;
-    }
+    /*.plan .row{*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.plan .col-4{*/
+    /*    margin-bottom: 10px;*/
+    /*}*/
     .content-title{
         font-size: 14px;
     }
@@ -432,6 +432,13 @@
     .footer-desc{
         font-size: 12px;
         margin-bottom: 5px;
+    }
+    .footer-img{
+        width: 100px;
+    }
+    input[type=range]{
+        width: 100%;
+        margin-bottom: 40px;
     }
 
 

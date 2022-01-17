@@ -75,6 +75,7 @@ $(".owl-carousel").owlCarousel({
 const swiper = new Swiper('.swiper', {
     // Optional parameters
       loop: true,
+      slidesPerView: 1,
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -92,7 +93,23 @@ const swiper = new Swiper('.swiper', {
         draggable: true,
         loop: true,
     },
+    breakpoints: {
+        320: {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            },
+        768:{
+            spaceBetween: 10,
+            slidesPerView: 1,
+        },
+        992:{
+            spaceBetween: 10,
+            slidesPerView: 1,
+        },
+        },
+
 });
+
 
 
 AOS.init();

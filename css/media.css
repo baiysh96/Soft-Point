@@ -425,14 +425,7 @@
     .footer{
         text-align: center;
     }
-    .footer-title{
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
-    .footer-desc{
-        font-size: 12px;
-        margin-bottom: 5px;
-    }
+
     .footer-img{
         width: 100px;
     }
